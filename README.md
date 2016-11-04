@@ -1,0 +1,1 @@
+# Static react starter
