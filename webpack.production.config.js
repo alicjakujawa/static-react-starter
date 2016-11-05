@@ -13,9 +13,9 @@ loaders.push({
 	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
 });
 
-// local scss modules
+// local sass modules
 loaders.push({
-	test: /[\/\\]src[\/\\].*\.scss/,
+	test: /[\/\\]src[\/\\].*\.sass/,
 	exclude: /(node_modules|bower_components|public)/,
 	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
 });
@@ -59,7 +59,7 @@ module.exports = {
 			allChunks: true
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/template.html',
+			template: './src/index.html',
 			title: 'Webpack App'
 		}),
 		new webpack.optimize.DedupePlugin()

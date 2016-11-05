@@ -1,5 +1,5 @@
 {
-  "presets": ["es2015", "react"],
+  "presets": ["es2015", "react", "stage-0"],
   "plugins": [
     "transform-runtime",
     "transform-decorators-legacy",
@@ -7,7 +7,7 @@
     "react-hot-loader/babel",
     [
       "react-intl", {
-        "messagesDir": "./build/messages",
+        "messagesDir": "./public/messages",
         "enforceDescriptions": false
       }
     ]
