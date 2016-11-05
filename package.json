@@ -7,8 +7,7 @@
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "copyLocales": "cp -r l10n ./public/messages/l10n",
-    "extractMessages": "./node_modules/.bin/babel-node src/utils/translator.js"
+    "copyLocales": "cp -r l10n ./public/messages/l10n"
   },
   "repository": {
     "type": "git",
